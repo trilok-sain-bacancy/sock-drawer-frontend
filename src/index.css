@@ -81,7 +81,7 @@ body {font-family: 'Lato', sans-serif; font-size: 14px;   background: url(./asse
  border-radius: 8px;; background-color: var(--primary);color:var(--white);font-size: 24px;font-weight: 400;}
 .custom_accordion_main .accordion-button:not(.collapsed) {    color: var(--white);    background-color: transparent;    box-shadow: none;}
 .custom_accordion_main .accordion-button { font-size: 22px; font-weight: 500; color: var(--white); background-color: #282828;}
-.custom_accordion_main .accordion-item { background-color: #282828;}
+.custom_accordion_main .accordion-item { background-color: #282828; border: 0;}
 .custom_accordion_main .accordion-item p { font-size: 20px; color:#CCCCCC}
 .custom_accordion_main .accordion-button:focus {    border-color: inherit;    box-shadow: none;}
 .custom_accordion_main .accordion-button:not(.collapsed)::after { background-image: url(./assets//images/arrow_1.svg)}
