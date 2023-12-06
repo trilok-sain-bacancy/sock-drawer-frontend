@@ -1,13 +1,183 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+/* CSS Document */
+
+a { text-decoration:none}
+a:hover { text-decoration:none;}
+a:focus { outline:none}
+img:focus { outline:none}
+
+body {font-family: 'Lato', sans-serif; font-size: 14px;   background: url(./assets/images/BG.png); 
+    background-size: 100%; background-repeat: repeat-y;}
+
+:root {
+        --primary: #269468;
+        --secondary: #101010; 
+        --white: #ffffff;  
+        --gray: #D9DBE9;  
+                
+ }
+
+
+
+
+.navbar_main {padding: 32px 0; background-color: var(--white);}
+.navbar_main .nav-link {font-size: 20px;font-weight: 400;line-height: 24px; margin-left: 16px; margin-right: 16px;color: var(--secondary);  }
+.navbar_main .navbar-brand {font-size: 32px; color: var(--secondary); font-style: normal; font-weight: 900; line-height: 28px; display: flex;
+    align-items: center;}
+.navbar_main .btn {font-size: 18px;font-style: normal;font-weight: 800;line-height: 18px; padding: 18px 24px; border-radius: 8px;
+    background: var(--secondary); color:var(--white);}
+ .navbar_main .btn:hover{ background: var(--primary);} 
+.navbar_main .nav-link.active, .navbar_main .nav-link:hover {color:var(--primary) !important;}
+ 
+
+.banner_main {padding:100px 20px;}
+.banner_main p {color:var(--secondary);font-style: normal;font-size: 24px;font-weight: 700; text-transform: uppercase;}
+.banner_main h2 {color:var(--secondary);font-size: 60px; line-height: 75px;font-weight: 900; }
+.banner_main h2 span { color: var(--primary);}
+.banner_main a {padding:24px 32px;border-radius:12px;line-height:normal; 
+    border: 1px solid var(--gray); background-color: var(--white);color:var(--secondary);font-size: 24px;font-weight: 400;}
+.banner_main a.green_btn {background: var(--primary); color: var(--white);} 
+
+
+.metamask_main {padding:100px 20px;background-color: var(--white);}
+.metamask_main h3 {color:var(--secondary);font-style: normal;font-size: 24px;font-weight: 700; text-transform: uppercase;}
+.metamask_main h2 { color:var(--secondary);font-size: 40px; line-height: normal;font-weight: 900; }
+.metamask_main h2 span { color:var(--primary);}
+.metamask_main p {color:var(--secondary);font-style: normal;line-height:32px; font-size: 24px;text-transform: capitalize;font-weight: 400;}
+.metamask_main p span { color: var(--primary);}
+.metamask_main a {padding: 24px 64px;border-radius: 8px; line-height: normal; 
+    border: 1px solid var(--gray); background-color:var(--secondary); color:var(--white);font-size: 18px; font-weight: 800;}
+.metamask_main a:hover{ background: var(--primary); color: var(--white);} 
+.metamask_main h4 { color: var(--secondary); font-style: normal; font-size: 32px;font-weight: 600;}
+.metamask_main p.text_gray {color:#4F4F4F }
+.metamask_main .box_main { border-radius:30px;border:1px solid var(--gray);padding: 32px 24px;}
+
+
+.buy_sell_main {padding: 250px 20px 100px 20px;}
+.buy_sell_main h2 {color:var(--white);font-size: 40px;line-height: normal;font-weight: 600; text-transform: capitalize;}
+.buy_sell_main p.text_01 { color: var(--white);font-style: normal; line-height: normal; font-size: 24px;font-weight: 400;}
+.buy_sell_main .box_main {border-radius: 30px; padding:0px 50px 0px 50px;background-color: var(--secondary);}
+.buy_sell_main .box_main .box_inner_child {padding:24px;background-color:var(--white);border-radius: 30px 30px 0px 0px; margin-top: -150px;border: 1px solid #D9DBE9;}
+
+.buy_sell_main .box_main .box_inner_child .box{ border-radius: 10px; background-color: #F9F9F9; flex-wrap: wrap;}
+.buy_sell_main .box_main .box_inner_child .box label { color: var(--secondary);}
+.buy_sell_main .box_main .box_inner_child .box .text2 { font-size: 24px; font-weight: 600; color: #848484;}
+.buy_sell_main .box_main .box_inner_child .box .border_round {border-radius: 10px; }
+.buy_sell_main .box_main .box_inner_child .box .border_round p {color: var(--secondary); font-size: 20px;}
+.buy_sell_main .box_main .box_inner_child .verify_btn { border-radius: 12px; font-size: 24px; background-color: var(--primary); } 
+.buy_sell_main .box_main .box_inner_child ul li { width: 50%;}
+.buy_sell_main .box_main .box_inner_child .nav-tabs { border-bottom: 0; background-color: #F9F9F9; border-radius: 10px;}
+.buy_sell_main .box_main .box_inner_child .nav-tabs .nav-link { border-radius: 6px;border-color: transparent; margin-bottom: 0; font-size: 18px;color: var(--secondary); }
+.buy_sell_main .box_main .box_inner_child .nav-tabs .nav-link.active { background-color: var(--secondary); color: var(--white);}
+
+
+.custom_accordion_main {padding:100px 20px; background-color: var(--secondary);}
+.custom_accordion_main h3 { font-size: 24px;}
+.custom_accordion_main h2 {color:var(--white);font-size: 40px; line-height: normal; }
+.custom_accordion_main h2 span { color: var(--primary);}
+.custom_accordion_main p.text2 { font-size: 24px;}
+.custom_accordion_main .btn_01 {padding:20px 40px;line-height:normal; 
+ border-radius: 8px;; background-color: var(--primary);color:var(--white);font-size: 24px;font-weight: 400;}
+.custom_accordion_main .accordion-button:not(.collapsed) {    color: var(--white);    background-color: transparent;    box-shadow: none;}
+.custom_accordion_main .accordion-button { font-size: 22px; font-weight: 500; color: var(--white); background-color: #282828;}
+.custom_accordion_main .accordion-item { background-color: #282828; border: 0;}
+.custom_accordion_main .accordion-item p { font-size: 20px; color:#CCCCCC}
+.custom_accordion_main .accordion-button:focus {    border-color: inherit;    box-shadow: none;}
+.custom_accordion_main .accordion-button:not(.collapsed)::after { background-image: url(./assets//images/arrow_1.svg)}
+.custom_accordion_main .accordion-button::after {background-image: url(./assets//images/arrow_1.svg)} 
+
+
+.slider_main {padding:100px 20px; background-color: var(--white); overflow: hidden;}
+.slider_main .slick-dots { display: none !important;}
+.slider_main h3 {color:var(--secondary);font-style: normal;font-size: 24px;font-weight: 700; text-transform: uppercase;}
+.slider_main h2 { color:var(--secondary);font-size: 40px; line-height: normal;font-weight: 900; }
+.slider_main h2 span { color:var(--primary);}
+.slider_main h4 {color:var(--secondary); font-weight: 600; font-size: 24px;}
+.slider_main p {color:#4F4F4F; font-weight: 400; font-size: 18px; margin-bottom: 0;}
+.slider_main p a { color: var(--primary);}
+.slick-initialized .slick-slide { margin: 0 0 0 0;    display: flex;    align-items: center;    justify-content: center;  }
+.slider_main .slick-slide { padding-left: 15px;padding-right: 15px;}
+.slider_main .view_more { padding: 24px 64px;  border-radius: 8px;    line-height: normal;    border: 1px solid var(--gray);
+    background-color: var(--secondary);    color: var(--white);    font-size: 18px;    font-weight: 800;}
+.slider_main .view_more:hover { background-color: var(--primary); color: var(--white);}
+
+
+.footer_main {padding:100px 20px;}
+.footer_main .footer_logo a { font-size: 50px; font-weight: 900; color: var(--secondary); }
+.footer_main .copy_text { font-size: 24px; line-height: normal;color: var(--secondary); }
+.footer_main .footer_menu {display: flex; flex-wrap: wrap;}
+.footer_main .footer_menu .box {margin-right:100px;}
+.footer_main .footer_menu .box h3 { font-size: 24px; color: var(--secondary);  }
+.footer_main .footer_menu .box ul li { list-style: none; margin-bottom: 10px;;}
+.footer_main .footer_menu .box ul li a { padding:20px 0; font-size: 20px; color: #999999; }
+
+
+
+@media screen and (max-width:1440px) {
+.slider_main h2 { font-size: 35px;}
+.slider_main h4 { font-size: 28px;;}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+@media screen and (max-width:1200px) {
+.metamask_main a {padding: 24px 20px;}
+.buy_sell_main p.text_01 { margin-bottom: 30px;}
+
 }
+
+
+@media screen and (max-width:991px) {
+.navbar_main {padding:20px 0;}
+.navbar_main .nav-link {font-size: 20px;margin-left: 0px; margin-right: 0px;}
+.navbar_main .navbar-brand { font-size: 22px;}  
+.navbar_main .btn { padding: 10px 20px; border-radius: 8px; }
+.navbar_main .navbar-toggler:focus {    box-shadow: 0 0 0 0.25px;}
+
+.banner_main {padding:20px;}
+.banner_main p {font-size: 20px;}
+.banner_main h2 {font-size: 30px; line-height:normal; }
+.banner_main a {padding: 16px 12px;font-size: 16px;}
+
+.metamask_main {padding:20px;}
+.metamask_main h3 {font-size: 20px;}
+.metamask_main h2 {font-size: 30px;}
+.metamask_main p {line-height: 28px; font-size: 20px;}
+.metamask_main a {padding: 16px 20px; font-size: 16px;}
+.metamask_main h4 {font-size: 30px;}
+.metamask_main .box_main {padding: 16px 18px;}
+
+.buy_sell_main {padding:180px 20px 40px 20px;}
+.buy_sell_main h2 {font-size: 24px;}
+.buy_sell_main p {font-size: 16px;}
+.buy_sell_main .box_main .box_inner_child {padding: 16px; }  
+.buy_sell_main .box_main { padding: 20px;}
+.buy_sell_main .box_main .box_inner_child .verify_btn {    font-size: 20px;}
+
+.custom_accordion_main {padding:20px;}
+.custom_accordion_main h3 { font-size: 20px;}
+.custom_accordion_main h2 {font-size: 30px;  }
+.custom_accordion_main p.text2 { font-size: 20px;}
+.custom_accordion_main .btn_01 {padding:16px 16px; font-size: 20px;}
+.custom_accordion_main .accordion-button { font-size: 18px; }
+.custom_accordion_main .accordion-item p { font-size: 16px;}
+
+.slider_main {padding:20px;}
+.slider_main h3 {font-size: 20px;}
+.slider_main h2 {font-size: 30px;}
+.slider_main h4 {font-size: 22px;}
+.slider_main p {font-size: 20px;}
+.slider_main .view_more { padding: 16px 20px;}
+
+.footer_main  {padding:20px;}
+.footer_main .footer_logo a { font-size: 30px;}
+.footer_main .copy_text { font-size: 20px; }
+.footer_main .footer_menu {display: flex;flex-wrap: wrap; }
+.footer_main .footer_menu .box {margin-right:auto; width: 50%;}
+.footer_main .footer_menu .box h3 { font-size: 20px;}
+.footer_main .footer_menu .box ul li a { padding:16px 0; font-size: 16px; }
+
+
+}
+
