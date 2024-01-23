@@ -27,11 +27,11 @@ const Footer = () => {
     <section className="footer_main">
       <div className="container">
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-6">
             <FooterLogo  />
             <CopyText />
           </div>
-          <div className="col-md-7">
+          <div className="col-md-6">
             <div className="footer_menu">
               {FOOTER_MENUS.map((item,index,arr) => (
                 <FooterMenuBox key={item.id} {...item} containerClassName={arr.length -1 === index ? "me-0": ""}/>

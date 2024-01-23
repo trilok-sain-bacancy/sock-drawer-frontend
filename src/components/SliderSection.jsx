@@ -1,13 +1,27 @@
 import Slider from 'react-slick';
 import { SLIDER_DATA } from '../utils/constants';
+import { useState } from 'react';
 
 const SliderItem = ({ image, title, description }) => {
+  const [showFull, toggle ] = useState(false)
   return (
-    <div>
+    <div className='position-relative'>
+      <div  style={{ height:470, opacity: showFull ? 0.1 : 1, border: showFull? "solid black 0px": ""}}>
       <img src={image} className="img-fluid" alt="Slider" />
       <h4>{title}</h4>
-      <p>{description} <a href="#">see more</a></p>
-    </div>
+      <p>{description.detail.substring(0, 80)} <button className='border-0 bg-transparent' onClick={() => toggle(prev => !prev)}>see more</button></p>
+      </div>
+      {showFull && <div className='position-absolute top-0 p-3 h-100 border-0'>
+      <p>{description.detail}</p>
+      <h5 className='pt-2 pb-2 font-weight-bold'>{description.heading}</h5>
+      <p>{description.reference}</p>
+      <div>
+        <p>
+          <button className='border-0 bg-transparent' onClick={() => toggle(prev => !prev)}>see less</button>
+        </p>
+      </div>
+      </div>}
+   </div>
   );
 };
 

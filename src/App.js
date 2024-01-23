@@ -11,9 +11,8 @@ function App() {
   return (
     <>
       <Header />
-      <WelcomeSeciton/>
-      <TransctionSteps />
       <BuySellSection/>
+      <TransctionSteps />
       <AccordionSection />
       <SliderMain />
       <Footer/>

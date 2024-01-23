@@ -24,7 +24,7 @@ const AccordionSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row mt-lg-5 mt-2">
+                <div className="row mt-lg-5 mt-2 accordion-item-container">
                     <div className="col-md-6">
                         <div className="accordion" id="accordionExample">
                             {ACCORDION_DATA.map(item => <AccordionItem {...item} />)}

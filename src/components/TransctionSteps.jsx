@@ -4,7 +4,7 @@ import { TRANSCTION_STEPS } from '../utils/constants';
 const BoxMain = ({ image, title, description}) => {
     return (
       <div className="col-lg-4 mb-3" >
-        <div className="box_main">
+        <div className="box_main h-100">
           <img src={image} className="img-fluid" alt="Crypto Coins" />
           <h4 className="mt-2 mt-lg-5">{title}</h4>
           <p className="mt-3 mb-0 text_gray">{description}</p>
